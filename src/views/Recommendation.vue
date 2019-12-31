@@ -2,12 +2,15 @@
   <v-container fluid>
     <v-row><v-col><v-card>
     <v-card-title>Submit a Recommendation Letter</v-card-title>
-    <v-card-subtitle>{{ applicantName }} requests you write a recommendation letter for the Ross Mathematics Program. Recommendation letters must be received by March 1, {{ (new Date()).getFullYear() }}.  Your letter should discuss the applicant's mathematical strengths and weaknesses, the applicant's ability to work with others, the applicant's persistence and willingness to take on challenges, and the applicant's maturity.  Participants at the Ross Program will be living away from home for more than one month.</v-card-subtitle>
+    <v-card-subtitle>{{ applicantName }} requests that you write a recommendation letter for the Ross Mathematics Program. Recommendation letters must be received by the end of March.  Your letter should discuss the applicant's mathematical strengths and weaknesses, the applicant's ability to work with others, the applicant's persistence and willingness to take on challenges, and the applicant's maturity.  Participants at the Ross Program will be living in a college dorm for more than one month.</v-card-subtitle>
+
+    <p></p>
+>
 
     <v-list-item two-line v-if="!recommendation.submittedAt">
       <v-list-item-content>
         <v-list-item-title>
-	  <v-file-input v-model="file" :label="`Your Recommendation Letter for ${applicantName}`"/>
+	  <v-file-input v-model="file" hint="Please upload this recommendation letter as a PDF file. Other file types might not be readable in the Ross Program's systems."  persistent-hint :label="`Your Recommendation Letter for ${applicantName}`"/>
 	</v-list-item-title>
 	<v-list-item-subtitle></v-list-item-subtitle>
       </v-list-item-content>
