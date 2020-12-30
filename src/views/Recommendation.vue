@@ -5,7 +5,7 @@
     <v-card-subtitle>{{ applicantName }} requests that you write a recommendation letter for the Ross Mathematics Program. Recommendation letters must be received by the end of March.  Your letter should discuss the applicant's mathematical strengths and weaknesses, the applicant's ability to work with others, the applicant's persistence and willingness to take on challenges, and the applicant's maturity.  Participants at the Ross Program will be living in a college dorm for more than one month.</v-card-subtitle>
 
     <p></p>
->
+
 
     <v-list-item two-line v-if="!recommendation.submittedAt">
       <v-list-item-content>
